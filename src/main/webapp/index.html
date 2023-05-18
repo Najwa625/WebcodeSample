@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+alert("Hi from javascript");
+
+
+function add() {
+	var a=prompt("Enter the value");
+	var b=prompt("Enter the value");
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);	
+}
+function check(){
+	var a=document.getElementById("text1").value;
+	var b=document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+}
+function check1(){
+	var a=document.getElementById("text1").value;
+	var b=document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c-d);
+}
+function check2(){
+	var a=document.getElementById("text1").value;
+	var b=document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c*d);
+}
+function check3(){
+	var a=document.getElementById("text1").value;
+	var b=document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c/d);
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>My First Web App</title>
+</head>
+<body>
+Hi From body section
+<form>
+<input type="text" name="t1" id="text1">
+<input type="text" name="t2" id="text2">
+<input type="button" value="Add" onclick="check()">
+<input type="button" value="Subtract" onclick="check1()">
+<input type="button" value="Multiply" onclick="check2()">
+<input type="button" value="Divide" onclick="check3()">
+
+ </form>
+
+
+<input type="button" value="CallAdd" onclick="add()"> 
+</body>
+</html>
